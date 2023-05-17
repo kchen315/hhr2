@@ -1,0 +1,3 @@
+possible errors: 0, 9, 13, 15 (all look good)
+robot: 1, 10, 11, 16, 19
+no video files: 6 (Duffy_Lap__20200521_100357), 14 (Pehr_Lap__20200330_080005)
