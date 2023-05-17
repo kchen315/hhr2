@@ -1,0 +1,111 @@
+﻿vid_id,phase,time_start,time_end,labeler,notes
+vid_0,oob,00H:00m:00s,00H:03m:15s,tf,
+vid_0,exposure,00H:03m:15s,00H:08m:46s,tf,
+vid_0,hiatal_dissec,00H:08m:46s,00H:15m:04s,tf,
+vid_0,sac_reduction,00H:15m:04s,00H:15m:37s,tf,
+vid_0,hiatal_dissec,00H:15m:37s,00H:16m:14s,tf,
+vid_0,sac_reduction,00H:16m:14s,00H:18m:02s,tf,
+vid_0,sac_reduction,00H:18m:02s,00H:18m:19s,tf,L pleural entry
+vid_0,sac_reduction,00H:18m:19s,00H:19m:05s,tf,
+vid_0,oob,00H:19m:05s,00H:30m:20s,tf,likely ventilatory recruitment from capnothorax
+vid_0,sac_reduction,00H:30m:20s,00H:31m:14s,tf,
+vid_0,hiatal_dissec,00H:31m:14s,00H:31m:57s,tf,
+vid_0,fundus_mob,00H:31m:57s,00H:35m:20s,tf,
+vid_0,hiatal_dissec,00H:35m:20s,00H:36m:19s,tf,
+vid_0,eso_mob,00H:36m:19s,00H:38m:01s,tf,penrose positioning
+vid_0,eso_mob,00H:38m:01s,00H:48m:22s,tf,
+vid_0,hiatal_dissec,00H:48m:22s,00H:50m:27s,tf,
+vid_0,eso_mob,00H:50m:27s,00H:52m:30s,tf,
+vid_0,sac_excision,00H:52m:30s,00H:59m:35s,tf,
+vid_0,hiatal_repair,00H:59m:35s,01H:03m:25s,tf,
+vid_0,hiatal_dissec,01H:03m:25s,01H:04m:16s,tf,
+vid_0,peg_placement,01H:04m:16s,01H:09m:40s,tf,
+vid_0,hiatal_repair,01H:09m:40s,01H:24m:45s,tf,
+vid_0,hiatal_repair,01H:24m:45s,01H:27m:42s,tf,mesh placement
+vid_0,wrap,01H:27m:42s,01H:44m:22s,tf,
+vid_0,wrap,01H:44m:22s,01H:44m:43s,tf,penrose removal
+vid_0,other,01H:44m:43s,01H:47m:32s,tf,drain placement
+vid_0,oob,01H:47m:32s,01H:47m:42s,tf,
+vid_0,other,01H:47m:42s,01H:49m:17s,tf,port closure/TAP block
+vid_0,oob,01H:49m:17s,01H:49m:27s,tf,
+vid_0,other,01H:49m:27s,01H:51m:26s,tf,port closure/TAP block
+vid_0,other,01H:51m:26s,01H:51m:43s,tf,port removal elevation PEG
+vid_0,oob,01H:51m:43s,01H:52m:31s,tf,
+vid_1,oob,00H:00m:00s,00H:02m:26s,tf,
+vid_1,exposure,00H:02m:26s,00H:05m:46s,tf,
+vid_1,oob,00H:05m:46s,00H:06m:04s,tf,
+vid_1,exposure,00H:06m:04s,00H:07m:05s,tf,
+vid_1,hiatal_dissec,00H:07m:05s,00H:12m:45s,tf,
+vid_1,sac_reduction,00H:12m:45s,00H:13m:24s,tf,
+vid_1,hiatal_dissec,00H:13m:24s,00H:14m:42s,tf,
+vid_1,sac_reduction,00H:14m:42s,00H:15m:03s,tf,
+vid_1,hiatal_dissec,00H:15m:03s,00H:15m:32s,tf,
+vid_1,exposure,00H:15m:32s,00H:15m:54s,tf,
+vid_1,sac_reduction,00H:15m:54s,00H:16m:43s,tf,
+vid_1,hiatal_dissec,00H:16m:43s,00H:18m:20s,tf,
+vid_1,fundus_mob,00H:18m:20s,00H:21m:52s,tf,
+vid_1,sac_reduction,00H:21m:52s,00H:23m:45s,tf,
+vid_1,hiatal_dissec,00H:23m:45s,00H:23m:45s,tf,
+vid_1,eso_mob,00H:24m:59s,00H:24m:59s,tf,for penrose insertion
+vid_1,eso_mob,00H:27m:55s,00H:28m:49s,tf,penrose positioning
+vid_1,hiatal_dissec,00H:28m:49s,00H:29m:48s,tf,
+vid_1,eso_mob,00H:29m:48s,00H:33m:48s,tf,
+vid_1,oob,00H:33m:48s,00H:34m:02s,tf,
+vid_1,eso_mob,00H:34m:02s,00H:37m:36s,tf,
+vid_1,hiatal_dissec,00H:37m:36s,00H:38m:56s,tf,
+vid_1,eso_mob,00H:38m:56s,00H:39m:37s,tf,
+vid_1,oob,00H:39m:37s,00H:39m:46s,tf,
+vid_1,eso_mob,00H:39m:46s,00H:39m:46s,tf,
+vid_1,hiatal_repair,00H:41m:35s,00H:56m:50s,tf,
+vid_1,other,00H:56m:50s,01H:05m:34s,tf,PEG placement
+vid_1,hiatal_repair,01H:05m:34s,01H:11m:01s,tf,
+vid_1,hiatal_repair,01H:11m:01s,01H:14m:35s,tf,mesh placement
+vid_1,sac_excision,01H:14m:35s,01H:21m:29s,tf,
+vid_1,wrap,01H:21m:29s,01H:38m:56s,tf,
+vid_1,wrap,01H:38m:56s,01H:39m:27s,tf,penrose removal/wrap inspection
+vid_1,other,01H:39m:27s,01H:42m:01s,tf,port closure/TAP block
+vid_1,oob,01H:42m:01s,01H:42m:08s,tf,
+vid_1,other,01H:42m:08s,01H:44m:32s,tf,port closure/TAP block
+vid_1,oob,01H:44m:32s,01H:45m:42s,tf,
+vid_1,other,01H:45m:42s,01H:46m:07s,tf,drain placement
+vid_1,oob,01H:46m:07s,01H:46m:17s,tf,
+vid_1,other,01H:46m:17s,01H:49m:57s,tf,drain placement
+vid_1,other,01H:49m:57s,01H:50m:11s,tf,port check
+vid_1,oob,01H:50m:11s,01H:53m:17s,tf,
+vid_4,oob,00H:00m:00s,00H:01m:26s,tf,
+vid_4,exposure,00H:01m:26s,00H:06m:23s,tf,
+vid_4,hiatal_dissec,00H:06m:23s,00H:11m:09s,tf,
+vid_4,fundus_mob,00H:11m:09s,00H:15m:43s,tf,
+vid_4,hiatal_dissec,00H:15m:43s,00H:19m:27s,tf,
+vid_4,eso_mob,00H:19m:27s,00H:20m:33s,tf,
+vid_4,eso_mob,00H:20m:33s,00H:22m:21s,tf,penrose insertion
+vid_4,eso_mob,00H:22m:21s,00H:23m:47s,tf,
+vid_4,eso_mob,00H:23m:47s,00H:24m:54s,tf,penrose reinsertion
+vid_4,hiatal_dissec,00H:24m:54s,00H:25m:51s,tf,
+vid_4,eso_mob,00H:25m:51s,00H:26m:55s,tf,penrose tie placed
+vid_4,eso_mob,00H:26m:55s,00H:33m:30s,tf,
+vid_4,hiatal_dissec,00H:33m:30s,00H:35m:13s,tf,
+vid_4,eso_mob,00H:35m:13s,00H:39m:42s,tf,
+vid_4,hiatal_repair,00H:39m:42s,00H:50m:41s,tf,
+vid_4,wrap,00H:50m:41s,01H:08m:03s,tf,
+vid_4,wrap,01H:08m:03s,01H:08m:36s,tf,penrose removal  
+vid_4,oob,01H:08m:36s,01H:08m:39s,tf,
+vid_4,other,01H:08m:40s,01H:10m:05s,tf,start of closure
+vid_5,oob,00H:00m:00s,00H:01m:36s,tf,
+vid_5,exposure,00H:01m:36s,00H:05m:04s,tf,
+vid_5,hiatal_dissec,00H:05m:04s,00H:09m:48s,tf,
+vid_5,fundus_mob,00H:09m:48s,00H:16m:06s,tf,switch to hiatal_dissec
+vid_5,hiatal_dissec,00H:16m:06s,00H:19m:28s,tf,
+vid_5,eso_mob,00H:19m:28s,00H:21m:24s,tf,penrose insertion
+vid_5,hiatal_dissec,00H:21m:24s,00H:22m:22s,tf,
+vid_5,eso_mob,00H:22m:22s,00H:33m:05s,tf,
+vid_5,hiatal_dissec,00H:33m:05s,00H:35m:54s,tf,
+vid_5,sac_excision,00H:35m:54s,00H:37m:25s,tf,
+vid_5,hiatal_repair,00H:37m:25s,00H:48m:23s,tf,
+vid_5,fundus_mob,00H:48m:23s,00H:51m:02s,tf,
+vid_5,wrap,00H:51m:02s,01H:14m:26s,tf,
+vid_5,wrap,01H:14m:26s,01H:14m:41s,tf,penrose removal  
+vid_5,other,01H:14m:41s,01H:16m:04s,tf,closure
+vid_5,oob,01H:16m:04s,01H:16m:34s,tf,
+vid_5,other,01H:16m:35s,01H:19m:02s,tf,closure
+vid_5,oob,01H:19m:02s,01H:19m:42s,tf,
