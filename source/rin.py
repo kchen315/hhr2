@@ -161,29 +161,45 @@ model.save('../results/models/model_{}_{}_{}.h5'.format(model_name, weights, tod
 #load test set and normalize using same code
 import pandas as pd
 from sklearn.metrics import roc_auc_score, accuracy_score
-y_preds = {}
-y_trues = {}
-for i in range(num_classes):
-    y_preds[i] = np.array([])
-    y_trues[i] = np.array([])
+cols = os.listdir(test_dir)
+preds_df = pd.DataFrame(columns=cols)
+trues_df = pd.DataFrame(columns=cols)
+
+count = 0
 for images, labels in test_ds:
     pred = model.predict(images)
-    for i in range(8):
-        y_preds[i] = np.concatenate((y_preds[i], pred[:, i]))
-        y_trues[i] = np.concatenate((y_trues[i], labels[:, i]))
-file_paths = test_ds.file_paths
-class_strs = [folder for folder in os.listdir(test_dir) if os.path.isdir]
-class_strs.sort()
+    label = labels.numpy()
+    preds_df.loc[count] = pred[0]
+    trues_df.loc[count] = label[0]
+    count += 1
 
-#get predictions for each image and save to csv
-class_strs.append('image_fname')
-class_strs.append('y_true')
-preds_df = pd.DataFrame(columns=class_strs)
-for i in range(len(y_preds[0])):
-    pred = []
-    for j in range(num_classes):
-        pred.append(y_preds[j][i])
-    pred.append(os.path.basename(file_paths[i]))
-    pred.append(os.path.basename(os.path.dirname(file_paths[i])))
-    preds_df.loc[len(preds_df)] = pred
+preds_df['path'] = test_ds.file_paths
+trues_df['path'] = test_ds.file_paths
+
+#save the preds and trues to csv
 preds_df.to_csv('../results/preds/preds_{}_{}_{}.csv'.format(model_name, weights, today_str), index=False)
+trues_df.to_csv('../results/preds/trues_{}_{}_{}.csv'.format(model_name, weights, today_str), index=False)
+
+#add _pred to the column names of preds_df
+preds_df.columns = [str(col) + '_pred' for col in preds_df.columns]
+#add _true to the column names of trues_df
+trues_df.columns = [str(col) + '_true' for col in trues_df.columns]
+
+scores_df = pd.DataFrame(columns=['accuracy', 'AUROC', 'AUPRC', 'sensitivity', 'specificity'])
+for phase in cols:
+    #get the predicted probability of each class and the true class for the current phase
+    preds = preds_df[phase + '_pred']
+    trues = trues_df[phase + '_true']
+    #calculate the AUROC
+    auroc = roc_auc_score(trues, preds)
+    #calculate the AUPRC
+    auprc = average_precision_score(trues, preds)
+    #calculate the accuracy
+    acc = accuracy_score(trues, preds.round())
+    #calculate the sensitivity
+    sens = recall_score(trues, preds.round())
+    #calculate the specificity
+    spec = recall_score(trues, preds.round(), pos_label=0)
+    #add the scores to the scores_df
+    scores_df.loc[phase] = [acc, auroc, auprc, sens, spec]
+scores_df.to_csv('../results/scores/scores_{}_{}_{}.csv'.format(model_name, weights, today_str))
